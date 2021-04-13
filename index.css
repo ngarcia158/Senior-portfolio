@@ -2,7 +2,7 @@ html{
     height: auto;
 }
 body{
-    background-color: #000;
+    background-color: #FFFFFf;
 }
 
 li, a, button{
@@ -31,10 +31,12 @@ header{
 .navLinks li{
     display: inline-block;
     padding: 0px 20px;
+    
 }
 
 .navLinks li a{
     transition: all 0.3s ease 0s;
+
 }
 .navLinks li a:hover{
     color: #0088a9;
@@ -52,4 +54,26 @@ button{
 button:hover{
     background-color: rgba(0, 136, 169, 0.8);
 
+}
+
+.badges{
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.text{
+    margin: auto;
+    width: auto;
+}
+
+h2{
+    text-align: center;
+} 
+
+img{
+    max-height: 100%;
+    max-width: 100%;
+}
+#img{
+    flex-shrink: 5;
 }
