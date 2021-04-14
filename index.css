@@ -75,5 +75,13 @@ img{
     max-width: 100%;
 }
 #img{
-    flex-shrink: 5;
+    flex-shrink: 3;
+
+}
+#text{
+    padding: 0px 25px;
+}
+img#me{
+    padding: 10px;
+
 }
