@@ -1,9 +1,3 @@
-html{
-    height: auto;
-}
-body{
-    background-color: #FFFFFf;
-}
 
 li, a, button{
     font-size: 16px;
@@ -16,28 +10,27 @@ header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 5px 1%;
+    padding: 0px;
     background-color: #53565A;
 }
 .logo{
     cursor: pointer;
     margin-right: auto;
-    margin-left: -10px;
+    height: auto;
 }
 .navLinks{
     list-style: none;
     height: 100%;
+
 }
 
 .navLinks li{
     display: inline-block;
-    padding: 0px 20px;
-    
+    padding: 0px;
 }
 
 .navLinks li a{
     transition: all 0.3s ease 0s;
-
 }
 .navLinks li a:hover{
     color: #0088a9;
@@ -56,33 +49,11 @@ button:hover{
     background-color: rgba(0, 136, 169, 0.8);
 
 }
-
-.badges{
-    display: flex;
-    align-items: center;
-    margin: auto;
-}
-.text{
-    margin: auto;
-    width: auto;
-}
-
-h2{
+footer{
+    background-color: #53565A;
+    padding: 5px 0px;
     text-align: center;
-} 
-
-img{
-    max-height: 100%;
-    max-width: 100%;
 }
-#img{
-    flex-shrink: 3;
-
-}
-#text{
-    padding: 0px 25px;
-}
-img#me{
-    padding: 10px;
-
+nav{
+    height: 100%;
 }
