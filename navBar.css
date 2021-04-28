@@ -57,3 +57,29 @@ footer{
 nav{
     height: 100%;
 }
+.product{
+    display:flex;
+    margin: auto;
+}
+.itemBox{
+    width: 1280px;
+}
+#img{
+    width: 200px;
+    margin: auto;
+}
+section{
+    padding: 20px;
+    width: 1280px;
+    margin: 40px auto;
+}
+li a{
+    display: block;
+    padding: 30px;
+    height:100%;
+}
+li a:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: scale(1.25);
+    transition: transform .6s;
+}
