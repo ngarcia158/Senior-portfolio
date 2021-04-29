@@ -21,13 +21,18 @@ header{
 .navLinks{
     list-style: none;
     height: 100%;
-
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+.navLinks button:hover{
+    color: rgb(3, 90, 255);
+}
+ul{
+    list-style: none;
 }
 
-.navLinks li{
-    display: inline-block;
-    padding: 0px;
-}
 
 .navLinks li a{
     transition: all 0.3s ease 0s;
@@ -36,7 +41,7 @@ header{
     color: #0088a9;
 }
 
-button{
+.contact2{
     margin-left: 20px;
     padding: 9px 25px;
     background-color: rgba(0, 136, 169, 1);
@@ -45,7 +50,7 @@ button{
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
-button:hover{
+button.contact2:hover{
     background-color: rgba(0, 136, 169, 0.8);
 
 }
@@ -75,11 +80,54 @@ section{
 }
 li a{
     display: block;
-    padding: 30px;
+    padding: 10px;
     height:100%;
 }
-li a:hover{
-    background-color: rgba(255, 255, 255, 0.6);
-    transform: scale(1.25);
-    transition: transform .6s;
+
+.nav{
+    color: black;
+}
+.products, .projects{
+    position: relative;
+
+}
+
+.projects ul,
+.products ul{
+position: absolute;
+background: black;
+margin-top: 25px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: column;
+width: 100%;
+border-radius: 5px;
+opacity: 0;
+pointer-events: none;
+transition: all 0.4s ease;
+
+/* width and height if needed */
+}
+.navLinks button{
+    /* Edits the button styles for each the drop downs */
+}
+
+.projects li,
+.products li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.projects li:hover,
+.products li:hover{
+    background-color: red;
+}
+.projects button:focus + ul {
+    opacity: 1;
+    pointer-events: all;
 }
