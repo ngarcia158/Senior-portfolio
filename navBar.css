@@ -37,7 +37,7 @@ ul{
 .navLinks li a{
     transition: all 0.3s ease 0s;
 }
-.navLinks li a:hover{
+.navLinks li a.nav:hover{
     color: #0088a9;
 }
 
@@ -91,26 +91,31 @@ li a{
     position: relative;
 
 }
-
-.projects ul,
-.products ul{
+ul{
+    width: 100%;
+}
+.projects .ul,
+.products .ul{
 position: absolute;
-background: black;
-margin-top: 25px;
+background: red;
+margin-top: 43px;
 display: flex;
 justify-content: space-around;
 align-items: center;
-flex-direction: column;
-width: 100%;
+width: 400%;
 border-radius: 5px;
 opacity: 0;
 pointer-events: none;
-transition: all 0.4s ease;
+transform: translateX(-50%);
 
 /* width and height if needed */
 }
 .navLinks button{
     /* Edits the button styles for each the drop downs */
+    color: rgb(244, 244, 244);
+    background: none;
+    border: none;
+    text-decoration: none;
 }
 
 .projects li,
@@ -118,16 +123,34 @@ transition: all 0.4s ease;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 80%;
     height: 100%;
     border-radius: 5px;
 }
 
 .projects li:hover,
 .products li:hover{
-    background-color: red;
+    color: white;
+    background: rgb(3, 90, 255);
 }
-.projects button:focus + ul {
+.projects button:focus + .ul, .products button:focus + .ul {
     opacity: 1;
     pointer-events: all;
+}
+
+nav{
+
+}
+button{
+    margin: 0px 10px;
+    float: right;
+}
+
+
+
+.listItem{
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    float: none;
 }
